@@ -1,0 +1,79 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vendaingressos;
+
+/**
+ *
+ * @author aluno
+ */
+public class Cliente {
+    private String nome, cpf, email;
+    private double saldo;
+    private boolean estudante;
+
+    public Cliente(String nome, String cpf, String email, double saldo, boolean estudante) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.saldo = saldo;
+        this.estudante = estudante;
+    }
+
+    public boolean isEstudante() {
+        if(estudante == true){ 
+            System.out.println("é estudante.");
+            return true;
+        }
+        else 
+            System.out.println("Não é estudante.");
+            return false;
+    }
+
+    public void setEstudante(boolean estudante) {
+        this.estudante = estudante;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", CPF: " + cpf + ", Email: " + email + ", Saldo: " + saldo + ", Estudante: " + estudante;
+    }
+    
+    
+    
+    
+    
+}
