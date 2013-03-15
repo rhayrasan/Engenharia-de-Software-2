@@ -9,12 +9,12 @@ package vendaingressos;
  * @author aluno
  */
 public class Ingresso {
-    private String nome;
+    private String filme;
     private double valor;
     private int quantidade;
 
-    public Ingresso(String nome, double valor, int quantidade) {
-        this.nome = nome;
+    public Ingresso(String nomeFilme, double valor, int quantidade) {
+        this.nomeFilme = nomeFilme;
         this.valor = valor;
         this.quantidade = quantidade;
     }
@@ -27,12 +27,12 @@ public class Ingresso {
         this.quantidade = quantidade;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeFilme() {
+        return nomeFilme;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nomeFilme) {
+        this.nomeFilme = nomeFilme;
     }
 
     public double getValor() {
