@@ -90,7 +90,7 @@ public class VendaIngressos {
                 case 2:
                     double preco = 0;
                     String nc = JOptionPane.showInputDialog("Seu nome: ");
-                    String ni = JOptionPane.showInputDialog("Ingresso: ");
+                    String ni = JOptionPane.showInputDialog("Filme: ");
                     
                     for(Ingresso i: ingressos){
                         if( i.getNome().equalsIgnoreCase(ni)){
